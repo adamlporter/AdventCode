@@ -11,6 +11,7 @@ def delete_desktop_ini_files(folder_path):
                 except Exception as e:
                     print(f"Error deleting {file_path}: {e}")
 
-#folder_path = 'G:\My Drive\Python\DataAnalysisClass'
-folder_path = 'G:\My Drive\Python\AdventCode'
+cwd = os.getcwd()
+
+folder_path = cwd
 delete_desktop_ini_files(folder_path)
